@@ -6,7 +6,7 @@ RESO is a conceptual brand project that explores coffee as both a physical produ
 The project connects origin, ritual, packaging, and visual storytelling into one unified system — where every cup reflects a place, a process, and a memory.
 
 ## 🌐 Live Site
-https://ZOZOBAR.github.io/reso-coffee/
+[https://ZOZOBAR.github.io/reso-coffee/](https://zozobar.github.io/GD4-RESO/)
 
 ## 🧠 Concept
 
