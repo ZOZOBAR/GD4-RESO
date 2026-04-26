@@ -17,6 +17,7 @@
   --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
   --shadow-soft: 0 24px 60px rgba(26, 26, 26, 0.08);
   --refined-cream: #F2E9DD;
+  --refined-bg: #FBF8F3;
   --refined-forest: #384A31;
   --refined-amber: #D4A12A;
   --refined-topo: #EFE7DC;
@@ -374,11 +375,20 @@ svg {
 
 .story-visual {
   max-width: 320px;
+  overflow: visible;
 }
 
 .story-visual svg {
   width: 100%;
   height: auto;
+}
+
+.story-visual svg {
+  overflow: visible;
+}
+
+.story-visual text {
+  pointer-events: none;
 }
 
 
@@ -891,7 +901,7 @@ svg {
 .section-evolution {
   position: relative;
   overflow: hidden;
-  background: var(--refined-cream);
+  background: var(--refined-bg);
 }
 
 .section-evolution::before {
@@ -899,8 +909,8 @@ svg {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 12% 18%, rgba(44, 95, 46, 0.08), transparent 28%),
-    radial-gradient(circle at 84% 82%, rgba(212, 160, 23, 0.11), transparent 30%);
+    radial-gradient(circle at 12% 18%, rgba(56, 74, 49, 0.055), transparent 28%),
+    radial-gradient(circle at 84% 82%, rgba(212, 161, 42, 0.08), transparent 30%);
   pointer-events: none;
 }
 
@@ -912,7 +922,7 @@ svg {
 .evolution-panel {
   height: 100%;
   background: var(--refined-cream);
-  border: 1px solid rgba(44, 95, 46, 0.12);
+  border: 1px solid rgba(56, 74, 49, 0.11);
   box-shadow: 0 26px 70px rgba(26, 26, 26, 0.06);
   overflow: hidden;
   transition: transform 0.35s var(--ease-soft), box-shadow 0.35s var(--ease-soft), border-color 0.35s var(--ease-soft);
@@ -931,6 +941,7 @@ svg {
   height: auto;
   display: block;
   object-fit: contain;
+  filter: drop-shadow(0 18px 32px rgba(56, 74, 49, 0.08));
 }
 
 .evolution-panel--refined {
@@ -946,7 +957,7 @@ svg {
   object-fit: cover;
   object-position: center;
   padding: 0;
-  background: transparent;
+  background: var(--refined-bg);
 }
 
 .evolution-panel--refined img {
@@ -954,12 +965,13 @@ svg {
   object-fit: contain;
   object-position: center;
   padding: 0;
-  background: transparent;
+  background: var(--refined-bg);
 }
 
 .evolution-caption {
   padding: 1.55rem 1.75rem 1.75rem;
   flex: 1;
+  background: rgba(242, 233, 221, 0.78);
 }
 
 .evolution-caption span {
